@@ -1,0 +1,1009 @@
+{
+	"info": {
+		"_postman_id": "b7b1b4ac-7cc3-4f22-a80c-d682ed8df48b",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6464284"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <Your JWT Token>",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/users/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <Your JWT Token>",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"\",\n  \"password\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/users/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <Your JWT Token>",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/users/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <Your JWT Token>",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"antonmills1981@googlemail.com\",\n  \"password\": \"12345\",\n  \"first_name\": \"Bruce\",\n  \"last_name\": \"Wayne\",\n  \"client_id\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign Out as User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <Your JWT Token>",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/signout",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"signout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign Up as User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"antonmills1981@googlemail.com\",\n  \"password\": \"12345\",\n  \"first_name\": \"Alfred\",\n  \"last_name\": \"Pennyworth\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/users/signup",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In as User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"antonmills1981@googlemail.com\",\n  \"password\": \"12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/users/signin",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In as Super Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"hello@antonmills.com\",\n  \"password\": \"12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/users/signin",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Super Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"hello@antonmills.com\",\n  \"password\": \"12345\",\n  \"first_name\": \"Bruce\",\n  \"last_name\": \"Wayne\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/users/createsuperadmin",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"createsuperadmin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Building",
+			"item": [
+				{
+					"name": "Get a building by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/buildings/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"buildings",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new building",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Wayne Manor\",\n    \"latitude\": \"-33.835400\",\n    \"longitude\": \"151.213920\",\n    \"address_line_1\": \"7/26-28 Eaton Street\",\n    \"address_line_2\": \"Neutral Bay\",\n    \"state\": \"NSW\",\n    \"postcode\": \"2089\",\n    \"country\": \"Australia\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/buildings/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"buildings",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update an existing building",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"\",\n    \"latitude\": \"\",\n    \"longitude\": \"\",\n    \"address_line_1\": \"\",\n    \"address_line_2\": \"\",\n    \"state\": \"\",\n    \"postcode\": \"\",\n    \"country\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/buildings/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"buildings",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a building",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/buildings/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"buildings",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sites",
+			"item": [
+				{
+					"name": "Read Site",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/sites/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Site",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Bat Cave\",\n    \"description\": \"The Bat Cave under Wayne Manor\",\n    \"buildingId\": \"1\",\n    \"latitude\": \"-33.835400\",\n    \"longitude\": \"151.213920\",\n    \"address_line_1\": \"7/26-28 Eaton Street\",\n    \"address_line_2\": \"Neutral Bay\",\n    \"state\": \"NSW\",\n    \"postcode\": \"2089\",\n    \"country\": \"Australia\",\n    \"dailyOpen\": \"06:00\",\n    \"dailyClose\": \"12:00\",\n    \"siteMaxVehicleHeight\": \"2.1m\",\n    \"siteType\": \"Underground\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/sites",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Site",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"\",\n    \"description\": \"\",\n    \"buildingId\": \"\",\n    \"latitude\": \"\",\n    \"longitude\": \"\",\n    \"address_line_1\": \"\",\n    \"address_line_2\": \"\",\n    \"state\": \"\",\n    \"postcode\": \"\",\n    \"country\": \"\",\n    \"createdBy\": \"\",\n    \"updatedBy\": \"\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/sites/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Site",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/sites/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rates",
+			"item": [
+				{
+					"name": "Read Site",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/sites/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Daily Rate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Daily Batcave\",\n    \"type\": \"daily\",\n\t\"value\": 40,\n\t\"startTime\": \"03:00\",\n\t\"endTime\": \"12:00\",\n\t\"dayOfWeek\": {{dailyrateday}},\n\t\"siteId\": 1\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/rates",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"rates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Site",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"\",\n    \"description\": \"\",\n    \"buildingId\": \"\",\n    \"latitude\": \"\",\n    \"longitude\": \"\",\n    \"address_line_1\": \"\",\n    \"address_line_2\": \"\",\n    \"state\": \"\",\n    \"postcode\": \"\",\n    \"country\": \"\",\n    \"createdBy\": \"\",\n    \"updatedBy\": \"\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/sites/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Site",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/sites/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bays",
+			"item": [
+				{
+					"name": "Read Site",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/sites/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Bay",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"F1_11\",\n    \"size\": \"2.1m\",\n\t\"availableFrom\": \"03:00\",\n\t\"availableUntil\": \"12:00\",\n\t\"siteId\": 1\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/bays",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"bays"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Site",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"\",\n    \"description\": \"\",\n    \"buildingId\": \"\",\n    \"latitude\": \"\",\n    \"longitude\": \"\",\n    \"address_line_1\": \"\",\n    \"address_line_2\": \"\",\n    \"state\": \"\",\n    \"postcode\": \"\",\n    \"country\": \"\",\n    \"createdBy\": \"\",\n    \"updatedBy\": \"\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/sites/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Site",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/sites/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "Read Site",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/sites/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Booking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"startDate\": \"2024-01-15T09:00:00.000Z\",\n    \"endDate\": \"2024-01-15T18:00:00.000Z\",\n    \"userId\": 1,\n    \"siteId\": 1,\n    \"bayId\": 1,\n    \"transactionId\": 1,\n    \"carRegistration\": \"EKQ76E\",\n    \"transactionAmount\": 103.50,\n    \"salesInvoiceId\": \"2345fghj\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/bookings",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Site",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"\",\n    \"description\": \"\",\n    \"buildingId\": \"\",\n    \"latitude\": \"\",\n    \"longitude\": \"\",\n    \"address_line_1\": \"\",\n    \"address_line_2\": \"\",\n    \"state\": \"\",\n    \"postcode\": \"\",\n    \"country\": \"\",\n    \"createdBy\": \"\",\n    \"updatedBy\": \"\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/sites/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Site",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/sites/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sites",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "Search hourly bays",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"latitude\": \"-33.835400\",\r\n    \"longitude\": \"151.213920\",\r\n    \"radius\": 1,\r\n    \"availableFrom\": \"04:00\",\r\n\t\"availableUntil\": \"10:00\",\r\n    \"date\":\"11/01/2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/search/hourly",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"search",
+								"hourly"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search daily bays",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"latitude\": \"-33.835400\",\r\n    \"longitude\": \"151.213920\",\r\n    \"radius\": 0.1,\r\n    \"startDate\": \"2024-01-15T09:00:00.000Z\",\r\n    \"endDate\": \"2024-01-15T18:00:00.000Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/search/daily",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"search",
+								"daily"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

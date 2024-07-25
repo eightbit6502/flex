@@ -1,0 +1,6 @@
+
+/portal/node_modules
+/api/node_modules
+portal/package-lock.json
+api/package-lock.json
+/booking_web/node_modules

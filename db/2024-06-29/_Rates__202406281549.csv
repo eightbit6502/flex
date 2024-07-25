@@ -1,0 +1,5 @@
+"id","name","type","value","startTime","endTime","dayOfWeek","specialStartDate","specialEndDate","siteId","status","createdBy","updatedBy","createdAt","updatedAt"
+1,Daily Batcave,daily,40.0,03:00:00,12:00:00,monday,,,2,ACTIVE,1,1,2024-06-28 15:31:28.467 +1000,2024-06-28 15:31:28.467 +1000
+2,Daily Batcave,daily,40.0,03:00:00,12:00:00,tuesday,,,2,ACTIVE,1,1,2024-06-28 15:31:32.253 +1000,2024-06-28 15:31:32.253 +1000
+3,Daily Batcave,daily,40.0,01:00:00,22:00:00,wednesday,,,2,ACTIVE,1,1,2024-06-28 15:31:34.772 +1000,2024-06-28 15:31:34.772 +1000
+4,Daily Batcave,special,1000.0,01:00:00,22:00:00,,,,2,ACTIVE,1,1,2024-06-28 15:31:38.645 +1000,2024-06-28 15:31:38.645 +1000

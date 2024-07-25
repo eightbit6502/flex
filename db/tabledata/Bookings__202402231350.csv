@@ -1,0 +1,2 @@
+"id","startDate","endDate","userId","siteId","bayId","transactionId","carRegistration","transactionAmount","cancelReason","cancelDate","salesInvoiceId","createdBy","updatedBy","createdAt","updatedAt"
+1,2024-01-15 20:00:00.000 +1100,2024-01-16 05:00:00.000 +1100,1,1,1,1,EKQ76E,103.5,,,"2345fghj",1,1,2024-02-07 14:45:46.418 +1100,2024-02-07 14:45:46.418 +1100

@@ -1,0 +1,2 @@
+"id","name","description","buildingId","latitude","longitude","addressLine1","addressLine2","status","postcode","country","state","dailyOpen","dailyClose","siteMaxVehicleHeight","siteType","createdBy","updatedBy","createdAt","updatedAt"
+2,Bat Cave,The Bat Cave under Wayne Manor,1,-33.8354,151.21392,"7/26-28 Eaton Street",Neutral Bay,ACTIVE,"2089",Australia,NSW,"06:00","12:00","2.1m",Underground,1,1,2024-06-28 15:30:08.435 +1000,2024-06-28 15:30:08.435 +1000

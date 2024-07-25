@@ -1,0 +1,4 @@
+"id","firstName","lastName","mobile","status","activationToken","activationTokenExpires","passwordResetToken","passwordResetTokenExpires","clientId","email","password","role","paymentToken","createdAt","updatedAt","firstname","lastname"
+1,Bruce,Wayne,,ACTIVE,"",,,,,hello@antonmills.com,$2a$10$j71g6kCRw7wVmxwxbeDEpec1cvEERBR/862mvE.JzAD01ubFU6IBW,super_admin,,2024-06-28 15:29:08.842 +1000,2024-06-28 15:29:08.842 +1000,,
+3,Lucius,Fox,,ACTIVE,"",,,,,lucius.fox@wayne.com.au,$2a$10$kcgoS3/9K4MfopkvDu7MdeFZftsfJnWGMN3r8cJUgjjLeb7RFAgoW,user,,2024-06-28 15:36:02.044 +1000,2024-06-28 15:36:02.044 +1000,,
+2,Alfred,Pennyworth,,ACTIVE,"",,,,,alfred.pennyworth@batman.com.au,$2a$10$wtfQUFqJLpG5VxNJBqisjuS5DGgUx4XisU50gN0GKquHc1v/BiztS,user,,2024-06-28 15:35:58.055 +1000,2024-06-28 15:35:58.055 +1000,,

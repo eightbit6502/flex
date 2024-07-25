@@ -1,0 +1,4 @@
+"id","name","latitude","longitude","address_line_1","address_line_2","state","postcode","country","createdBy","updatedBy","createdAt","updatedAt"
+1,Wayne Manor,-33.8354,151.21392,"7/26-28 Eaton Street",Neutral Bay,NSW,"2089",Australia,1,1,2024-06-15 21:17:20.343 +1000,2024-06-15 21:17:20.343 +1000
+2,Arkham Asylum,-33.8354,151.21392,"10 Arkham Avenue",Neutral Bay,NSW,"2089",Australia,1,1,2024-06-15 21:17:20.343 +1000,2024-06-15 21:17:20.343 +1000
+3,Wayne Headquarters,-33.8354,151.21392,"1 Wayne Way",Neutral Bay,NSW,"2089",Australia,1,1,2024-06-15 21:17:20.343 +1000,2024-06-15 21:17:20.343 +1000

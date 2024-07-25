@@ -1,0 +1,2 @@
+"id","first_name","last_name","mobile_phone","status","client_id","email","password","role","paymentToken","createdAt","updatedAt"
+1,Bruce,Wayne,,ACTIVE,,hello@antonmills.com,$2a$10$ceRh/xgEVP7roWpBIDQyE.LyxU9EvLXI7hbzqSYJ3QOCLqIK6JL5a,super_admin,,2024-02-07 14:45:31.074 +1100,2024-02-07 14:45:31.074 +1100

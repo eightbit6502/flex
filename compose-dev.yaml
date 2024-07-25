@@ -1,0 +1,89 @@
+version: "3.7"
+services:
+  db:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    restart: unless-stopped
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres-db
+    networks:
+      - api2db
+    expose:
+      - 5432
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    tty: true
+    ports:
+      - 3000:3000
+    volumes:
+      - ./api/:/code/api
+    environment:
+      HOST: localhost
+      PORT: 3000
+      DB_HOST: db
+      DB_USER: postgres
+      DB_NAME: postgres-db
+      DB_PWD: postgres
+      JWT_SECRET: allyourbasearebelongtous
+      CORS_DOMAINS: http://localhost:3000, http://localhost:3001, http://localhost:3002
+    networks:
+      - portal2api
+      - webapp2api
+      - api2db
+    depends_on:
+      - db
+    expose:
+      - 3001
+      - 3002
+    working_dir: /code/api
+    command: bash -c "npm install && npm run dev"
+
+  webapp:
+    #image: node:alpine
+    build:
+      context: ./booking_web
+      dockerfile: Dockerfile
+    tty: true
+    ports:
+      - 3001:3001
+    volumes:
+      - ./booking_web/:/code/booking_web
+    networks:
+      - webapp2api
+    depends_on:
+      - api
+    working_dir: /code/booking_web
+    command: bash -c "npm install && npm run dev"
+
+  portal:
+    #image: node:alpine
+    build:
+      context: ./portal
+      dockerfile: Dockerfile
+    tty: true
+    ports:
+      - 3002:3002
+    volumes:
+      - ./portal/:/code/portal
+    networks:
+      - portal2api
+    depends_on:
+      - api
+    working_dir: /code/portal
+    command: bash -c "npm install && npm run dev"
+
+volumes:
+  postgres-data:
+
+networks:
+  portal2api: {}
+  webapp2api: {}
+  api2db: {}

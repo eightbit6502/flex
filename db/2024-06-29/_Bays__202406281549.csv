@@ -1,0 +1,3 @@
+"id","name","size","availableFrom","availableUntil","siteId","status","createdBy","updatedBy","createdAt","updatedAt"
+1,Bay,"2.1m",03:00:00,12:00:00,2,ACTIVE,1,1,2024-06-28 15:31:07.578 +1000,2024-06-28 15:31:07.578 +1000
+2,Bay,"2.1m",03:00:00,12:00:00,2,true,1,1,2024-06-28 15:31:15.483 +1000,2024-06-28 15:31:15.483 +1000

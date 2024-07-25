@@ -1,0 +1,5 @@
+"id","first_name","last_name","mobile_phone","status","activationToken","activationTokenExpires","passwordResetToken","passwordResetTokenExpires","client_id","email","password","role","paymentToken","createdAt","updatedAt"
+1,Bruce,Wayne,,ACTIVE,,,,,,hello@antonmills.com,$2a$10$sbOTLlS93HHv3z9dGyKoO.jDwME1dDgFyrGZQ2ysa0AwCJaDfIKY2,super_admin,,2024-06-15 21:16:49.150 +1000,2024-06-15 21:16:49.150 +1000
+2,John,Doe,,PENDING_ACTIVATION,"695206",2024-06-15 21:53:29.430 +1000,,,,john.doe@test.com.au,$2a$10$773fQi5sPbffWTrJQnRoAORAxIsjJdtLpuS13YjJo.dMMrxjvN05K,user,,2024-06-15 21:38:29.431 +1000,2024-06-15 21:38:29.431 +1000
+4,Alfred,Pennyworth,,ACTIVE,"",,,,,alfred.pennyworth@batman.com.au,$2a$10$UmeaW28I4bh3n4HnAVkUK.ZGSXtb8K6uoERUCf6sz7oIlg3SNSVhi,user,,2024-06-15 21:40:37.911 +1000,2024-06-15 21:40:37.911 +1000
+5,Lucius,Fox,,ACTIVE,"",,,,,lucius.fox@wayne.com.au,$2a$10$5.j3XL76B5zPf73XFD./MuRYO9ODRahUZ.FtvFN3Nmu/C1iD9.L3G,user,,2024-06-15 21:42:34.846 +1000,2024-06-15 21:42:34.846 +1000
